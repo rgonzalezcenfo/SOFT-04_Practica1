@@ -108,10 +108,7 @@ public class Menu {
                             reporteCreado.set(true);
                         }
                     });
-                    if (reporteCreado.get()) {
-                        System.out.println("Ubicacion registrada con exito!");
-                        System.out.println(" ");
-                    } else {
+                    if (!reporteCreado.get()) {
                         System.out.println("No se encontro su mascota en el sistema");
                         System.out.println(" ");
                     }
