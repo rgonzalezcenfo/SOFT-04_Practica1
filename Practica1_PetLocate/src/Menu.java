@@ -7,6 +7,35 @@ public class Menu {
     private boolean ejecutando = true;
     private ArrayList<Mascota> mascotas = new ArrayList<>();
 
+    //constructor
+    public Menu() {
+    }
+
+    //getters
+
+
+    public Scanner getScanner() {
+        return in;
+    }
+
+    public boolean isEjecutando() {
+        return ejecutando;
+    }
+
+    public ArrayList<Mascota> getMascotas() {
+        return mascotas;
+    }
+
+    //equals
+    public boolean equals(Menu menu){
+        return false;
+    }
+
+    //toString
+    public String toString(){
+        return "Menu";
+    }
+
     public void iniciarMenu(){
         while(ejecutando) {
             String mascotaID;
