@@ -93,4 +93,9 @@ public class Mascota {
             }
         });
     }
+
+    //estado
+    public boolean estaDisponible(){
+        return dispositivo == null;
+    }
 }
